@@ -1,0 +1,29 @@
+{
+	"name": "squadron-api/user-firebase-custom-auth",
+	"description": "Squadron User's Firebase custom authorization package",
+	"keywords": ["laravel", "squadron", "user", "firebase", "auth", "api"],
+	"license": "MIT",
+	"authors": [{
+		"name": "Andrey Novikov",
+		"email": "andrew@7glyphs.com",
+		"homepage": "https://7glyphs.com",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=7.2",
+		"kreait/firebase-php": "^4.22",
+		"squadron-api/user": "0.0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Squadron\\Firebase\\Auth\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Squadron\\Firebase\\Auth\\ServiceProvider"
+			]
+		}
+	}
+}
